@@ -41,6 +41,9 @@
     height: 550px;
     text-align: center;
     margin-bottom: 33px;
+    @include m1200 {
+        height: 400px;
+    }
     &:before {
         content: '';
         display: inline-block;
@@ -51,5 +54,6 @@
         display: inline-block;
         vertical-align: middle;
         max-width: 64%;
+        max-height: 90%;
     }
 }

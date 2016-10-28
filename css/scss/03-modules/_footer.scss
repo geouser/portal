@@ -10,6 +10,9 @@
         @include m1600 {
             padding: 0 60px;
         }
+        @media (max-width: 900px) {
+            padding: 0 20px;
+        }
     }
     div {
         text-align: right;
@@ -21,6 +24,21 @@
         color: #FFF;
         display: inline-block;
         margin-right: 75px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        @include m1200 {
+            margin-right: 25px;
+        }
+        @media (max-width: 900px) {
+            margin-right: 0;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
         span {
             display: inline-block;
             vertical-align: middle;
@@ -36,6 +54,10 @@
             -webkit-background-size: 100% 100%;
                  -o-background-size: 100% 100%;
                     background-size: 100% 100%;
+            @media (max-width: 900px) {
+                height: 23px;
+                width: 23px;
+            }
         }
         &.fb:before {
             background-image: url("../images/fb.png");
