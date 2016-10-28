@@ -1,0 +1,60 @@
+.sidebar {
+    @include position(fixed, 0, auto, 0, 0);
+    width: 230px;
+    padding-top: 75px;
+}
+
+.mainNav {
+    > ul {
+        list-style-type: none;
+        > li {
+            display: block;
+            @include transition(all, .2s);
+            padding-left: 42px;
+            > a {
+                color: #000;
+                line-height: 48px;
+                font-size: 24px;
+                display: block;
+                @include transition(all, .2s);
+            }
+            .sub-menu {
+                list-style-type: none;
+                background-color: $red;
+                padding: 20px 0 20px 15px;
+                display: none;
+                li {
+                    display: block;
+                    a {
+                        color: #FFF;
+                        display: block;
+                        margin-bottom: 16px;
+                        font-size: 18px;
+                    }
+                    &:last-of-type {
+                        a {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &:hover,
+            &.active {
+                background-color: $red;
+                a {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    display: block;
+    width: 197px;
+    margin-bottom: 90px;
+    margin-left: 40px;
+    img {
+        max-width: 100%;
+    }
+}

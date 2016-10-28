@@ -1,61 +1,38 @@
          
 .mainHeader {
-    @include position(absolute, 0, auto, auto, 0);
-    width: 100%;
-    z-index: 100;
-    background: #fff;
-    margin: 0;
-    @include transition(all, .4s);
-    
-        /*.................media.............*/
-        @include m800 {
-            @include position(fixed, 0, auto, auto, -100%);
-            width: 260px !important;
-            height: 100%;
-            text-align: center;
-            background-color: #fff;
-            margin-top: 0;
-            padding: 20px 0;
-            z-index: 100;
-            overflow: scroll;
-             
-            &.active { left: 0;}
-            .wrapper {
-                display: block;
-            }
-        }
-        /*.............end media..............*/
-}
-
-
-/* ------------------------------------ */
-/*  NAV STYLES  */
-.mainNav {
-    ul {
-        list-style-type: none;
-        a {
-            display: inline-block;
-            margin: 0 20px;
-            text-decoration: none;
-            @include transition(all, .2s);             
-            &:hover {}
-        }
-
-            /*.................media.............*/
-            @include m800 { 
-                display: block;
-                position: relative;
-                li a  {   
-                    margin: 0 0 25px 0;
-                    &.active {color: #ECCC1D;}
-                    &:hover  {background: transparent;}
-                } 
-            }
-            /*.............end media.............*/
+    @include position(fixed, 0, 0, auto, 0);
+    height: 150px;
+    .wrapper {
+        height: 100%;
+        @include flex();
     }
 }
 
-
+.languages {
+    list-style-type: none;
+    li {
+        display: inline-block;
+        vertical-align: middle;
+        &:after {
+            content: "/";
+            display: inline-block;
+            vertical-align: middle;
+        }
+        a {
+            color: #000;
+        }
+        &.current-lang {
+            a {
+                color: $red;
+            }
+        }
+        &:last-of-type {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
 
 
 /* ------------------------------------ */
@@ -69,7 +46,7 @@
     margin: auto; 
     cursor: pointer;
     z-index: 100;
-    background-color: salmon;
+    background-color: $red;
     border: none;
     -webkit-border-radius: 4px;
             border-radius: 4px;

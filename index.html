@@ -27,30 +27,41 @@
         <header class="mainHeader">
             <div class="wrapper">
 
-                <nav class="mainNav"><!-- start navigation -->
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Practive</a></li>
-                        <li><a href="#">Lawyers</a></li>
-                        <li><a href="#">Media</a></li>
-                        <li><a href="#">Contacts</a></li>
-                    </ul>
-                </nav><!-- end nav -->
+                <ul class="languages">
+                    <li><a href="">english</a></li>
+                    <li class="current-lang"><a href="">english</a></li>
+                </ul>
 
-                <div class="mainHeader__info">
-                    <div class="social">
-                        <a href="" class="social__item"></a>
-                        <a href="" class="social__item"></a>
-                        <a href="" class="social__item"></a>
+                <form class="searchInput" tabindex=0 method="get" id="searchform" action="">
+                    <div class="wrap">
+                        <input type="search" class="search_type field" name="s" id="s"  />
+                        <input type="submit" id="search_submit" class="sim" name="submit"  value="Search" />
                     </div>
-                    <a href="tel:+971 55 915 94 49" class="tel">+971 55 915 94 49</a>
-                    <a href="mailto:hello@law.com" class="mail">hello@law.com</a>
-                </div><!-- end mainHeader__info -->
+                </form>
 
             </div><!-- end wrapper -->
         </header><!-- end header -->
         
+        <aside class="sidebar"><!-- start sidebar -->
+            <a href="" class="logo"><img src="images/logo.png" alt=""></a>
+            <nav class="mainNav"><!-- start navigation -->
+                <ul>
+                    <li class="menu-item-has-children"><a href="#" class="active">organization</a>
+                        <ul class="sub-menu">
+                            <li><a href="">foundation</a></li>
+                            <li><a href="">programs</a></li>
+                            <li><a href="">advisory board</a></li>
+                            <li><a href="">team</a></li>
+                            <li><a href="">opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">grants</a></li>
+                    <li><a href="#">events</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav><!-- end nav -->
+        </aside><!-- end sidebar -->
+
         <button class="menu-button"> 
             <span class="menu-line top_line"></span>
             <span class="menu-line middle_line"></span>
@@ -59,13 +70,23 @@
 
 
         <!--=================================================================================================-->
-                                                    <!-- OFFER SECTION -->
-        <section class="offer">
-            <div class="offer__info wrapper"><!-- start offerInfo -->
-                <h1>Free advice from our</h1>
-                <button class="button">Request a free consultation</button>
-            </div><!-- end offerInfo -->
-        </section><!-- end offer section --> 
+                                                    <!-- MAIN -->
+        <main>
+            <div class="content">
+                <p>Armenia Art Foundation provides financial support to artists working in the field of contemporary art, to stimulate the development of contemporary art in Armenia.
+Project Grants for Artists are designed for artists or collectives, working in different media, including performance art, photography, audio-visual, digital and media art, and art in public spaces. The program is open for graduate students and professional artists alike. Project Grants can cover expenses for research and production of artworks. However, while research on the project may be conducted before applying for a Project Grant, the production of a new work at the end of the program is a mandatory requirement.</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="social">
+                    <a href="" class="fb">/armeniaartfoundation</a>
+                    <a href="" class="inst">/foundationaa</a>
+                </div>
+                <span class="copyright">© 2016, Armenia Art Foundation</span>
+            </div>
+        </footer>
 
 
   	    <!-- //////////////////////////////////////////////////////////////////////// -->

@@ -37,6 +37,11 @@ jQuery(document).ready(function($) {
             }
     });
 
+    $('.menu-item-has-children').click(function(event){
+        event.preventDefault();
+        $(this).toggleClass('active').children('ul').slideToggle();
+    });
+
 
 
     /*---------------------------
