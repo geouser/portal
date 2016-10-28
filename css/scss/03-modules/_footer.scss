@@ -8,4 +8,46 @@
         padding: 0 160px;
         @include flex();
     }
+    div {
+        text-align: right;
+    }
+}
+.social {
+    text-align: left;
+    a {
+        color: #FFF;
+        display: inline-block;
+        margin-right: 75px;
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            padding-top: 2px;
+        }
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            width: 33px;
+            height: 33px;
+            margin-right: 11px;
+            -webkit-background-size: 100% 100%;
+                 -o-background-size: 100% 100%;
+                    background-size: 100% 100%;
+        }
+        &.fb:before {
+            background-image: url("../images/fb.png");
+        }
+        &.inst:before {
+            background-image: url("../images/inst.png");
+        }
+    }
+}
+.footerLogo {
+    width: 130px;
+    display: inline-block;
+}
+.copyright {
+    color: #FFF;
+    display: block;
+    margin-top: 10px;
 }
