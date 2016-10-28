@@ -6,9 +6,11 @@ body {
 	height: 100%;
 }
 body {
-    padding: 200px 0 0 230px;
+    padding: 200px 0 0 0;
 }
-
+hr {
+    margin: 70px 0 95px;
+}
 
 // lAYOUT
 // ---------------------------
@@ -26,5 +28,22 @@ main {
     position: relative;
     .content {
         width: 1150px;
+        @include m1600 {
+            width: 100%;
+        }
+    }
+    @include m1600 {
+        padding: 50px 60px 100px 60px;
+    }
+}
+.wrap-content {
+    position: relative;
+    padding-left: 230px;
+    padding-bottom: 120px;
+    @include m1600 {
+        padding-left: 180px;
+    }
+    @include m1200 {
+        padding-left: 0;
     }
 }

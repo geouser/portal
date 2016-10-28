@@ -2,6 +2,8 @@
 .mainHeader {
     @include position(fixed, 0, 0, auto, 0);
     height: 200px;
+    background-color: #FFF;
+    z-index: 10;
     .wrapper {
         height: 100%;
         @include flex($justify: center);
@@ -12,11 +14,27 @@
          -o-background-size: auto 160px;
             background-size: auto 160px;
     background-position: calc(100% - 160px) 10px;
+    @include m1600 {
+        -webkit-background-size: auto 120px;
+         -o-background-size: auto 120px;
+            background-size: auto 120px;
+        height: 160px;
+        background-position: calc(100% - 60px) 10px;
+    }
+    @include m1200 {
+        height: 100px;
+        -webkit-background-size: auto 80px;
+         -o-background-size: auto 80px;
+            background-size: auto 80px;
+    }
 }
 
 .languages {
     list-style-type: none;
     margin-right: 170px;
+    @include m1200 {
+        margin-right: 60px;
+    }
     li {
         display: inline-block;
         vertical-align: middle;
@@ -82,7 +100,7 @@
     display: none;
     width: 50px;
     height: 50px;
-    @include position(fixed, 15px, 15px, auto, auto);
+    @include position(fixed, 15px, auto, auto, 15px);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
@@ -111,7 +129,7 @@
     &.active .middle_line  {   width: 0; left: 50%;}
 
         /*.................media.............*/
-        @include m800 {
+        @include m1200 {
             display: block;
         }
         /*..............end media.............*/

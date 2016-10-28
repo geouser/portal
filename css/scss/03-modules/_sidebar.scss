@@ -2,6 +2,17 @@
     @include position(fixed, 0, auto, 0, 0);
     width: 230px;
     padding-top: 75px;
+    z-index: 11;
+    @include m1600 {
+        width: 180px;
+    }
+    @include m1200 {
+        width: 300px;
+        left: -300px;
+        &.active {
+            left: 0;
+        }
+    }
 }
 
 .mainNav {
@@ -11,6 +22,9 @@
             display: block;
             @include transition(all, .2s);
             padding-left: 42px;
+            @include m1600 {
+                padding-left: 20px;
+            }
             > a {
                 color: #000;
                 line-height: 48px;
@@ -51,9 +65,9 @@
 
 .logo {
     display: block;
-    width: 197px;
+    width: 100%;
     margin-bottom: 90px;
-    margin-left: 40px;
+    padding-left: 40px;
     img {
         max-width: 100%;
     }

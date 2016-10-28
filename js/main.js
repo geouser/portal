@@ -29,11 +29,11 @@ jQuery(document).ready(function($) {
     $('.menu-button').on('click', function(event) {
         event.preventDefault();
         $(this).toggleClass('active');
-        $(this).siblings('header').toggleClass('active');
+        $(this).siblings('sidebar').toggleClass('active');
         if ($('header').hasClass('active')) {
-                $('body, html').css('overflow', 'hidden');
+                $('body').css('overflow', 'hidden');
             } else {
-                $('body, html').css('overflow', 'visible');
+                $('body').css('overflow', 'visible');
             }
     });
 
