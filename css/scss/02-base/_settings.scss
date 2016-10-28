@@ -21,6 +21,7 @@ main {
     padding-top: 50px;
     padding-left: 75px;
     text-align: left;
+    min-height: calc(100% - 200px);
     .content {
         width: 1150px;
     }
