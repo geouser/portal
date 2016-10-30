@@ -77,7 +77,6 @@ main {
     padding-left: 75px;
     text-align: left;
     padding-bottom: 120px;
-    min-height: calc(100% - 200px);
     position: relative;
     .content {
         width: 1150px;
@@ -99,6 +98,7 @@ main {
     position: relative;
     padding-left: 230px;
     padding-bottom: 120px;
+    min-height: 100%;
     @include m1600 {
         padding-left: 180px;
     }
