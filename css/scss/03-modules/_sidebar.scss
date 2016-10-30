@@ -29,6 +29,7 @@
                 color: #000;
                 line-height: 48px;
                 font-size: 24px;
+                font-family: $as;
                 display: block;
                 @include transition(all, .2s);
             }

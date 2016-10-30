@@ -8,11 +8,16 @@ body {
 body {
     padding: 200px 0 0 0;
     font-family: $as;
+    font-size: 18px;
     @include m1600 {
        padding-top: 160px;
     }
     @include m1200 {
         padding-top: 100px;
+        font-size: 16px;
+    }
+    @media (max-width: 700px) {
+        font-size: 14px;
     }
 }
 body.ar {
