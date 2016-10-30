@@ -22,4 +22,15 @@
     p {
         margin-bottom: 30px;
     }
+    &--short {
+        margin-left: 0;
+        margin-bottom: 100px;
+        &:after {
+        visibility: hidden;
+        display: block;
+        content: "";
+        clear: both;
+        height: 0;
+        }
+    }
 }
