@@ -15,9 +15,23 @@ body {
         padding-top: 100px;
     }
 }
+b,
+strong {
+    font-family: $asb;
+    font-weight: normal;
+}
+
+
 body.ar {
     font-family: $asa;
 }
+.ar b,
+.ar strong {
+    font-family: $asa;
+    font-weight: bold;
+}
+
+
 hr {
     margin: 70px 0 95px;
 }
