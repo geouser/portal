@@ -1,0 +1,25 @@
+.adviser {
+    position: relative;
+    padding-left: 350px;
+    margin-bottom: 110px;
+    margin-left: -70px;
+    &__person {
+        @include position(absolute, 0, auto, auto, 0);
+        text-align: right;
+        width: 300px;
+        img {
+            max-width: 100%;
+        }
+        figure {
+            display: block;
+            margin: 0 auto 35px;
+        }
+        figcaption {
+            text-align: right;
+            font: 29px/48px $asb;
+        }
+    }
+    p {
+        margin-bottom: 30px;
+    }
+}
