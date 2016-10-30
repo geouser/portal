@@ -1,6 +1,6 @@
          
 .mainHeader {
-    @include position(fixed, 0, 0, auto, 0);
+    @include position(absolute, 0, 0, auto, 0);
     height: 200px;
     background-color: #FFF;
     z-index: 10;
