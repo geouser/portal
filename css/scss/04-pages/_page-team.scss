@@ -1,0 +1,27 @@
+.team-box {
+    @include flex($alignI: flex-start, $justify: flex-start);
+
+    .teammate {
+        width: 26.1%;
+        text-align: center;
+        margin-bottom: 40px;
+
+        &:nth-child(3n+2) {
+            margin-left: 10.8%;
+            margin-right: 10.8%;
+        }
+
+        &__photo {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__name {
+            font-size: 30px;
+        }
+
+        &__position {
+            font-size: 24px;
+        }
+    }
+}
