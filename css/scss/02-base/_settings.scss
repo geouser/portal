@@ -7,12 +7,16 @@ body {
 }
 body {
     padding: 200px 0 0 0;
+    font-family: $as;
     @include m1600 {
        padding-top: 160px;
     }
     @include m1200 {
         padding-top: 100px;
     }
+}
+body.ar {
+    font-family: $asa;
 }
 hr {
     margin: 70px 0 95px;
