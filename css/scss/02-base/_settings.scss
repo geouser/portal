@@ -35,7 +35,13 @@ body.ar {
     font-family: $asa;
     font-weight: bold;
 }
-
+.content--article {
+    p {
+        margin-bottom: 35px;
+        font-size: 24px;
+        line-height: 48px;
+    }
+}
 
 hr {
     margin: 70px 0 95px;
@@ -53,7 +59,7 @@ hr {
     }
 }
 main {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 75px;
     text-align: left;
     padding-bottom: 120px;
@@ -61,6 +67,9 @@ main {
     position: relative;
     .content {
         width: 1150px;
+        &--short {
+            width: 1040px;
+        }
         @include m1600 {
             width: 100%;
         }
