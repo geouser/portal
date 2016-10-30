@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!--[if IE]>
+        <meta http-equiv="ImageResize" content="no">
+        <meta http-equiv="ImageToolbar" content="no">
+        <meta name="MSSmartTagsPreventParsing" content="true">
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><![endif]-->
+        <meta property="og:url" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta name="google-site-verification" content="">
+        <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+        
+        <link rel="stylesheet" href="css/general.css">
+    </head>
+    <body>
+
+
+       
+        <!--=================================================================================================-->
+                                                    <!-- HEADER -->
+        <header class="mainHeader">
+            <div class="wrapper">
+
+                <ul class="languages">
+                    <li><a href="">հայերեն</a></li>
+                    <li class="current-lang"><a href="">english</a></li>
+                </ul>
+
+                <form class="searchInput" tabindex=0 method="get" id="searchform" action="">
+                    <div class="wrap">
+                        <input type="submit" id="search_submit" class="sim" name="submit"  value="" />
+                        <input type="search" class="search_type field" name="s" id="s"  placeholder="Search" />
+                    </div>
+                </form>
+
+            </div><!-- end wrapper -->
+        </header><!-- end header -->
+        
+        <aside class="sidebar"><!-- start sidebar -->
+            <a href="" class="logo"><img src="images/logo.svg" alt=""></a>
+            <nav class="mainNav"><!-- start navigation -->
+                <ul>
+                    <li class="menu-item-has-children"><a href="#" class="active">organization</a>
+                        <ul class="sub-menu">
+                            <li><a href="">foundation</a></li>
+                            <li><a href="">programs</a></li>
+                            <li><a href="">advisory board</a></li>
+                            <li><a href="">team</a></li>
+                            <li><a href="">opportunities</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">grants</a></li>
+                    <li><a href="#">events</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav><!-- end nav -->
+        </aside><!-- end sidebar -->
+
+        <button class="menu-button"> 
+            <span class="menu-line top_line"></span>
+            <span class="menu-line middle_line"></span>
+            <span class="menu-line bottom_line"></span>
+        </button><!-- end toggle mobile menu -->
+
+
+        <!--=================================================================================================-->
+                                                    <!-- MAIN -->
+        <div class="wrap-content">
+
+            <main>
+                <div class="content content--article">    
+
+                   <div class="grant">
+                       <div class="adviser__person">
+                            <p class="grant__title"><b>Project Grants for Artists</b></p>
+                            <p class="grant__date">October 2016 — October 2017</p>
+                       </div>
+                       <p>A Swiss citizen of Armenian origin, Mrs Cüberyan von Fürstenberg is a renowned international curator, winner of the Golden Lion for the best National Participation at the 56th Venice Biennale, for her curatorship of the Armenian Pavilion (2015), winner of the Swiss Grand Prix Meret Oppenheim, 2016.</p>
+                       <p>A pioneer in the field, she is known for broadening the scope of contemporary art. She was one of the first curators to show active interest in non-European artists and established a signature multicultural approach to art. With her unique vision of contemporary exhibitions, she has placed art in spaces such as monasteries, madrasas, large public buildings, squares, islands, and parks, as well as museums and institutions. Her works strive to provide a larger context for visual art by making it a more vigorous part of our lives, creating a vivid dialogue between art forms, while relating art to global social issues.</p>
+                       <p>She is the founder and first director of the Centre d’Art Contemporain in Geneva, Switzerland. Her work as director of the Magasin – Centre National d’Art Contemporain in Grenoble, France, and its School of Curators was internationally recognized with an award at Venice Biennale in 1993. She organized numerous large-scale exhibitions around the world including Dialogues for Peace to mark the United Nations’ 50th anniversary in 1995 (Geneva, Switzerland). In 1996, she founded ART for the World, an NGO working with contemporary art, independent cinema and human rights. In 2008, she was appointed by UNHCR and the European Commission to produce Stories on Human Rights, 22 short fiction films for the 60th anniversary of the Universal Declaration of Human Rights. In 2013, she served as chief curator of the 4th Biennale in Thessaloniki, Greece. Her most recent curatorial projects include FOOD (2013–2015) at the Ariana Museum (Geneva, Switzerland), SESC Pinheiros (São Paulo, Brazil), and MUCEM (Marseille, France), and Here Africa (2014–2016) at Château de Penthes (Geneva, Switzerland), and SESC Belenzhino (São Paulo, Brazil).</p>
+                   </div>
+
+                </div><!-- content -->
+            </main><!-- MAIN -->
+
+            <footer class="footer">
+                <div class="wrapper">
+                    <div class="social">
+                        <a href="" class="fb"><span>/armeniaartfoundation</span></a>
+                        <a href="" class="inst"><span>/foundationaa</span></a>
+                    </div>
+                    <div>
+                        <img class="footerLogo" src="images/footerLogo.svg" alt="">
+                        <span class="copyright">© 2016, Armenia Art Foundation</span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+
+        <!-- //////////////////////////////////////////////////////////////////////// -->
+
+        <div id="modal-popup" class="mfp-hide zoom-anim-dialog popup"></div>
+
+        <div id="modal-popup-ok" class="mfp-hide zoom-anim-dialog popup result">
+            <p class="heading">Ваша заявка принята =)</p>
+            <p class="msg">Мы свяжемся с вами в ближайшее время!</p>
+        </div>
+
+        <div id="modal-popup-error" class="mfp-hide zoom-anim-dialog popup result">
+            <p class="heading">Упс, что-то пошло не так =)</p>
+            <p class="msg">Но вы всегда можете связаться с нами по телефону!</p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
