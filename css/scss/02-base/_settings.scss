@@ -42,6 +42,20 @@ body.ar {
         line-height: 48px;
     }
 }
+.period {
+    margin-bottom: 45px;
+    margin-top: 65px;
+    font-family: $asb;
+    font-size: 24px;
+    span {
+        display: block;
+        color: $red;
+        font-size: 30px;
+    }
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
 
 hr {
     margin: 70px 0 95px;
