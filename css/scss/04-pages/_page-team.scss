@@ -6,22 +6,65 @@
         text-align: center;
         margin-bottom: 40px;
 
+        @media (max-width: 800px) {
+            width: 32%;
+        }
+
+        @media (max-width: 600px) {
+            width: 46%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
         &:nth-child(3n+2) {
             margin-left: 10.8%;
             margin-right: 10.8%;
+
+            @media (max-width: 800px) {
+                margin-left: 2%;
+                margin-right: 2%;
+            }
         }
 
         &__photo {
             width: 100%;
             margin-bottom: 40px;
+
+            @media (max-width: 800px) {
+                margin-bottom: 20px;
+            }
         }
 
         &__name {
             font-size: 30px;
+
+            @media (max-width: 1200px) {
+                font-size: 24px;
+            }
+
+            @media (max-width: 600px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 16px;
+            }
         }
 
         &__position {
             font-size: 24px;
+
+            @media (max-width: 1200px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 600px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 14px;
+            }
         }
     }
 }

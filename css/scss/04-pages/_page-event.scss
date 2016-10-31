@@ -3,6 +3,10 @@
         width: 100%;
         margin-bottom: 65px;
 
+        @media (max-width: 1000px) {
+            margin-bottom: 30px;
+        }
+
         img {
             width: 100%;
         }
@@ -11,6 +15,10 @@
     &__title {
         font-size: 36px;
         margin-bottom: 4px;
+
+        @media (max-width: 1000px) {
+            font-size: 30px;
+        }
     }
 
     &__date {
@@ -34,9 +42,18 @@
         .speakers-list {
             font-size: 24px;
 
+            @media (max-width: 1200px) {
+                font-size: 18px;
+            }
+
             li {
                 list-style: none;
                 line-height: 48px;
+
+                @media (max-width: 1200px) {
+                    line-height: normal;
+                    margin-bottom: 15px;
+                }
             }
         }
     }
