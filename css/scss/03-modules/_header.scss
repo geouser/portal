@@ -157,7 +157,7 @@
     display: none;
     width: 35px;
     height: 30px;
-    @include position(fixed, 27px, auto, auto, 10px);
+    @include position(fixed, 27px, auto, auto, 18px);
     margin: auto; 
     cursor: pointer;
     z-index: 100;
