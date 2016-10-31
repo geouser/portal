@@ -54,13 +54,28 @@
     li {
         display: inline-block;
         vertical-align: middle;
+        position: relative;
+        margin-right: 18px;
         &:after {
-            content: "/";
+            position: absolute;
+            right: -12px;
+            top: -4px;
+            content: "";
+            height: 45px;
+            margin: 0 0px 0 8px;
             display: inline-block;
             vertical-align: middle;
+            border-left: 1px solid #000;
+            -webkit-transform: rotate(20deg);
+               -moz-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                 -o-transform: rotate(20deg);
+                    transform: rotate(20deg);
         }
         a {
             color: #000;
+            font-size: 24px;
+            font-family: $asb;
         }
         &.current-lang {
             a {
@@ -68,6 +83,7 @@
             }
         }
         &:last-of-type {
+            margin-right: 0;
             &:after {
                 display: none;
             }
@@ -149,6 +165,7 @@
     border: none;
     -webkit-border-radius: 4px;
             border-radius: 4px;
+    @include transition(all, .2s);
     .menu-line {
         display: block;
         @include position(absolute, auto, 0, auto, 0);
@@ -164,7 +181,7 @@
     .middle_line           {   top: 14px;  margin: auto;}
     .bottom_line           {   bottom: 8px; margin: auto;}
 
-    &.active               {   -webkit-border-radius: 6px; border-radius: 6px;}
+    &.active               {   -webkit-border-radius: 6px; border-radius: 6px; left: 280px;}
     &.active .top_line     {   @include transform(rotate(45deg)); top: 45%;}
     &.active .bottom_line  {   @include transform(rotate(-45deg)); bottom: 45%;}
     &.active .middle_line  {   width: 0; left: 50%;}
