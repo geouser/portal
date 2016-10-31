@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
     $('.menu-button').on('click', function(event) {
         event.preventDefault();
         $(this).toggleClass('active');
-        $(this).siblings('sidebar').toggleClass('active');
+        $(this).siblings('.sidebar').toggleClass('active');
         if ($('header').hasClass('active')) {
                 $('body').css('overflow', 'hidden');
             } else {
