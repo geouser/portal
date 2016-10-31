@@ -8,12 +8,36 @@
         margin-bottom: 110px;
     }
 
+    @media (max-width: 900px) {
+        margin-left: 0;
+        padding-left: 275px;
+    }
+
+    @media (max-width: 750px) {
+        padding-left: 0;
+    }
+
     &__person {
         @include position(absolute, 0, auto, auto, 0);
         text-align: right;
         width: 300px;
+
+        @media (max-width: 900px) {
+            width: 250px;
+        }
+
+        @media (max-width: 750px) {
+            display: block;
+            position: static;
+            margin: 0 auto 30px;
+        }
+
         img {
             max-width: 100%;
+
+            @media (max-width: 900px) {
+                width: 100%;
+            }
         }
         figure {
             display: block;
@@ -22,6 +46,15 @@
         figcaption {
             text-align: right;
             font: 29px/48px $asb;
+
+            @media (max-width: 900px) {
+                font-size: 24px;
+                line-height: normal;
+            }
+
+            @media (max-width: 750px) {
+                text-align: center;
+            }
         }
     }
     p {
@@ -32,11 +65,19 @@
         margin-bottom: 10px!important;
         font-size: 24px;
         line-height: normal;
+
+        @media (max-width: 750px) {
+            text-align: center;
+        }
     }
     &__date {
         font-size: 24px;
         line-height: normal!important;
         color: $red;
+
+        @media (max-width: 750px) {
+            text-align: center;
+        }
     }
 
     &--short {
