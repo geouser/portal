@@ -1,0 +1,43 @@
+.single-event {
+    &__banner {
+        width: 100%;
+        margin-bottom: 65px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 4px;
+    }
+
+    &__date {
+        text-align: right;
+        color: #8a8a8a;
+        line-height: normal;
+        margin-bottom: 30px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &__speakers {
+        h3 {
+            font-size: 24px;
+            color: #8a8a8a;
+            margin-bottom: 35px;
+        }
+
+        .speakers-list {
+            font-size: 24px;
+
+            li {
+                list-style: none;
+                line-height: 48px;
+            }
+        }
+    }
+}
