@@ -54,13 +54,28 @@
     li {
         display: inline-block;
         vertical-align: middle;
+        position: relative;
+        margin-right: 18px;
         &:after {
-            content: "/";
+            position: absolute;
+            right: -12px;
+            top: -4px;
+            content: "";
+            height: 45px;
+            margin: 0 0px 0 8px;
             display: inline-block;
             vertical-align: middle;
+            border-left: 1px solid #000;
+            -webkit-transform: rotate(20deg);
+               -moz-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                 -o-transform: rotate(20deg);
+                    transform: rotate(20deg);
         }
         a {
             color: #000;
+            font-size: 24px;
+            font-family: $asb;
         }
         &.current-lang {
             a {
@@ -68,6 +83,7 @@
             }
         }
         &:last-of-type {
+            margin-right: 0;
             &:after {
                 display: none;
             }
